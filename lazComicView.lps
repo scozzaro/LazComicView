@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="14">
+      <Unit0>
+        <Filename Value="lazComicView.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="47" Y="11"/>
+        <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="frmmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="361"/>
+        <CursorPos X="41" Y="375"/>
+        <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="frmabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="2" Y="41"/>
+        <UsageCount Value="63"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="frmmain.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4822"/>
+        <CursorPos X="13" Y="4825"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="about.pas"/>
+        <HasResources Value="True"/>
+        <UnitName Value="frmabout"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="9"/>
+        <UsageCount Value="16"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="backup/frmabout.pas"/>
+        <ComponentName Value="AboutForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14"/>
+        <UsageCount Value="16"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="frmabout.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1824"/>
+        <CursorPos Y="1854"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/packages/fcl-base/src/fileinfo.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="248"/>
+        <CursorPos X="15" Y="71"/>
+        <UsageCount Value="6"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="/Development/FreePascal/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/Development/FreePascal/fpc/packages/fcl-image/src/fpreadtiff.pas"/>
+        <UnitName Value="FPReadTiff"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="229"/>
+        <UsageCount Value="6"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/Development/FreePascal/fpc/packages/fcl-base/src/fileinfo.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="505"/>
+        <CursorPos X="56" Y="536"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/Development/FreePascal/lazarus/components/thumbviewer/thumbcontrol.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="47" Y="12"/>
+        <UsageCount Value="9"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/Development/FreePascal/lazarus/components/thumbviewer/threadedimageloader.pas"/>
+        <UnitName Value="threadedimageLoader"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="125"/>
+        <CursorPos X="56" Y="141"/>
+        <UsageCount Value="9"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/packages/rtl-objpas/src/inc/strutils.pp"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="57"/>
+        <CursorPos X="21" Y="75"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit13>
+    </Units>
+    <JumpHistory Count="14" HistoryIndex="13">
+      <Position1>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="118" TopLine="88"/>
+      </Position1>
+      <Position2>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="104" Column="15" TopLine="89"/>
+      </Position2>
+      <Position3>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="105" Column="24" TopLine="90"/>
+      </Position3>
+      <Position4>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="106" Column="34" TopLine="92"/>
+      </Position4>
+      <Position5>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="79" Column="29" TopLine="72"/>
+      </Position5>
+      <Position6>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="106" Column="23" TopLine="92"/>
+      </Position6>
+      <Position7>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="108" Column="21" TopLine="91"/>
+      </Position7>
+      <Position8>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="109" Column="7" TopLine="92"/>
+      </Position8>
+      <Position9>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="107" Column="6" TopLine="92"/>
+      </Position9>
+      <Position10>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="127" Column="7" TopLine="98"/>
+      </Position10>
+      <Position11>
+        <Filename Value="frmmain.pas"/>
+        <Caret Line="146" Column="28" TopLine="37"/>
+      </Position11>
+      <Position12>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="44" Column="24" TopLine="21"/>
+      </Position12>
+      <Position13>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="174" Column="12" TopLine="147"/>
+      </Position13>
+      <Position14>
+        <Filename Value="frmabout.pas"/>
+        <Caret Line="123" Column="2" TopLine="88"/>
+      </Position14>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
