@@ -1,0 +1,6 @@
+{"version":1,"strings":[
+{"hash":209687725,"name":"frmmain.sselectimagedir","sourcebytes":[83,101,108,101,99,116,32,100,105,114,101,99,116,111,114,121,32,116,111,32,97,100,100,32,105,109,97,103,101,115,32,102,114,111,109],"value":"Select directory to add images from"},
+{"hash":42634461,"name":"frmmain.sselectimagedirrec","sourcebytes":[83,101,108,101,99,116,32,100,105,114,101,99,116,111,114,121,32,116,111,32,114,101,99,117,114,115,105,118,101,108,121,32,97,100,100,32,105,109,97,103,101,115,32,102,114,111,109],"value":"Select directory to recursively add images from"},
+{"hash":114304423,"name":"frmmain.simageviewer","sourcebytes":[76,97,122,67,111,109,105,99,86,105,101,119],"value":"LazComicView"},
+{"hash":109953028,"name":"frmmain.serrneedargument","sourcebytes":[79,112,116,105,111,110,32,97,116,32,112,111,115,105,116,105,111,110,37,100,32,40,37,115,41,32,110,101,101,100,115,32,97,110,32,97,114,103,117,109,101,110,116],"value":"Option at position%d (%s) needs an argument"}
+]}
