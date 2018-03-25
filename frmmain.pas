@@ -38,6 +38,9 @@ type
     MainMenu: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
+    mnuPreference: TMenuItem;
+    MenuItem4: TMenuItem;
+    mnuAbout: TMenuItem;
     OpenFolderImage: TMenuItem;
     MIHalfSize: TMenuItem;
     MImage: TMenuItem;
@@ -88,6 +91,8 @@ type
     procedure FormKeyDown(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
+    procedure mnuPreferenceClick(Sender: TObject);
+    procedure mnuAboutClick(Sender: TObject);
     procedure MIHalfSizeClick(Sender: TObject);
     procedure MINextImageClick(Sender: TObject);
     procedure OpenFolderImageClick(Sender: TObject);
@@ -98,10 +103,13 @@ type
     procedure ThumbControl1SelectItem(Sender: TObject; Item: TThreadedImage);
     procedure TrackBar1Change(Sender: TObject);
     {$IFDEF DARWIN}
-    procedure mnuAboutClick(Sender: TObject);
-    procedure OptionsCmdClick(Sender: TObject);
+    procedure osxAboutClick(Sender: TObject);
+
 
     {$ENDIF}
+
+     procedure osxOptionsClick(Sender: TObject);
+
   private
     { Private declarations }
     procedure NextImage;
@@ -239,17 +247,18 @@ end;
 
 
 {$IFDEF DARWIN}
-procedure TMainForm.mnuAboutClick(Sender: TObject);
+procedure TMainForm.osxAboutClick(Sender: TObject);
 begin
   AboutForm.ShowModal;
 end;
 
-  procedure TMainForm.OptionsCmdClick(Sender: TObject);
-begin
-  ShowMessage('working in progress');
-end;
 
 {$ENDIF}
+
+procedure TMainForm.osxOptionsClick(Sender: TObject);
+begin
+ShowMessage('working in progress');
+end;
 
 
 
@@ -386,7 +395,7 @@ begin
 
   AppAboutCmd := TMenuItem.Create(Self);
   AppAboutCmd.Caption := 'About LazComicView';  //<== BundleName set elsewhere
-  AppAboutCmd.OnClick := mnuAboutClick;
+  AppAboutCmd.OnClick := osxAboutClick;
   AppMenu.Add(AppAboutCmd);  {Add About as item in application menu}
 
   AppSep1Cmd := TMenuItem.Create(Self);
@@ -396,7 +405,7 @@ begin
   AppPrefCmd := TMenuItem.Create(Self);
   AppPrefCmd.Caption := 'Preferences...';
   AppPrefCmd.Shortcut := ShortCut(VK_OEM_COMMA, [ssMeta]);
-  AppPrefCmd.OnClick := OptionsCmdClick;  //<== "Options" on other platforms
+  AppPrefCmd.OnClick := osxOptionsClick;  //<== "Options" on other platforms
   AppMenu.Add(AppPrefCmd);
   MenuItem1.Visible:= false;
   {$ENDIF}
@@ -601,6 +610,17 @@ end;
 procedure TMainForm.MenuItem1Click(Sender: TObject);
 begin
   AboutForm.ShowModal;
+end;
+
+procedure TMainForm.mnuPreferenceClick(Sender: TObject);
+begin
+   osxOptionsClick(Sender);
+end;
+
+procedure TMainForm.mnuAboutClick(Sender: TObject);
+begin
+
+   AboutForm.ShowModal;
 end;
 
 procedure TMainForm.MIHalfSizeClick(Sender: TObject);
