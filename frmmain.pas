@@ -99,6 +99,8 @@ type
     procedure TrackBar1Change(Sender: TObject);
     {$IFDEF DARWIN}
     procedure mnuAboutClick(Sender: TObject);
+    procedure OptionsCmdClick(Sender: TObject);
+
     {$ENDIF}
   private
     { Private declarations }
@@ -242,6 +244,11 @@ begin
   AboutForm.ShowModal;
 end;
 
+  procedure TMainForm.OptionsCmdClick(Sender: TObject);
+begin
+  ShowMessage('working in progress');
+end;
+
 {$ENDIF}
 
 
@@ -339,12 +346,24 @@ begin
 end;
 
 procedure TMainForm.FormCloseQuery(Sender: TObject; var CanClose: boolean);
+function MyMessageDlg(const aMsg: string; DlgType: TMsgDlgType;
+  Buttons: TMsgDlgButtons): TModalResult;
+begin
+  with CreateMessageDialog(aMsg, DlgType, Buttons) do
+  begin
+    Result := ShowModal;
+    Free;
+  end;
+end;
+
 var
   buttonSelected: integer;
 begin
+
+
   if (Self.Active = True) then
-    buttonSelected := MessageDlg('Quit of LazComicView?', mtCustom, mbOKCancel, 0);
-  if buttonSelected = mrOk then
+    buttonSelected :=  MyMessageDlg('Vuoi davvero uscire dal programma?', mtConfirmation, [mbYes, mbNo]);
+  if buttonSelected = mrYes then
   begin
     CanClose := True;
     Stop := True;
@@ -377,7 +396,7 @@ begin
   AppPrefCmd := TMenuItem.Create(Self);
   AppPrefCmd.Caption := 'Preferences...';
   AppPrefCmd.Shortcut := ShortCut(VK_OEM_COMMA, [ssMeta]);
-  //AppPrefCmd.OnClick := OptionsCmdClick;  //<== "Options" on other platforms
+  AppPrefCmd.OnClick := OptionsCmdClick;  //<== "Options" on other platforms
   AppMenu.Add(AppPrefCmd);
   MenuItem1.Visible:= false;
   {$ENDIF}

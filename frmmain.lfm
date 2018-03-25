@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 421
+  Left = 359
   Height = 599
-  Top = 181
+  Top = 143
   Width = 1027
   HorzScrollBar.Page = 871
   HorzScrollBar.Range = 165
@@ -20,7 +20,7 @@ object MainForm: TMainForm
   OnKeyDown = FormKeyDown
   OnResize = FormResize
   OnShow = FormShow
-  LCLVersion = '1.8.2.0'
+  LCLVersion = '1.9.0.0'
   object SPImage: TSplitter
     Left = 132
     Height = 553

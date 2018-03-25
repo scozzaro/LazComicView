@@ -38,6 +38,7 @@ type
     Label4: TLabel;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
 
     procedure Image1Click(Sender: TObject);
   private
@@ -68,6 +69,11 @@ procedure TAboutForm.BitBtn2Click(Sender: TObject);
 begin
 
 
+end;
+
+procedure TAboutForm.Button1Click(Sender: TObject);
+begin
+   ReadInfo;
 end;
 
 
